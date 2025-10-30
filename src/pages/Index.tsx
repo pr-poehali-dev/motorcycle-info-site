@@ -27,6 +27,14 @@ interface Motorcycle {
     topSpeed: string;
     frontWheel: string;
     rearWheel: string;
+    seatHeight: string;
+    wheelbase: string;
+    groundClearance: string;
+    brakeFront: string;
+    brakeRear: string;
+    transmission: string;
+    cooling: string;
+    ignition: string;
   };
   price: string;
 }
@@ -51,6 +59,14 @@ const motorcycles: Motorcycle[] = [
       topSpeed: '299 км/ч',
       frontWheel: '120/70 ZR17',
       rearWheel: '190/55 ZR17',
+      seatHeight: '825 мм',
+      wheelbase: '1405 мм',
+      groundClearance: '130 мм',
+      brakeFront: '2x 320 мм диски',
+      brakeRear: '220 мм диск',
+      transmission: '6-ступенчатая',
+      cooling: 'Жидкостное',
+      ignition: 'Электронное',
     },
     price: '1 890 000 ₽',
   },
@@ -73,6 +89,14 @@ const motorcycles: Motorcycle[] = [
       topSpeed: '180 км/ч',
       frontWheel: '130/90 R16',
       rearWheel: '180/70 R16',
+      seatHeight: '690 мм',
+      wheelbase: '1625 мм',
+      groundClearance: '140 мм',
+      brakeFront: '300 мм диск',
+      brakeRear: '300 мм диск',
+      transmission: '5-ступенчатая',
+      cooling: 'Воздушное',
+      ignition: 'Электронное',
     },
     price: '1 250 000 ₽',
   },
@@ -95,6 +119,14 @@ const motorcycles: Motorcycle[] = [
       topSpeed: '220 км/ч',
       frontWheel: '120/70 R19',
       rearWheel: '170/60 R17',
+      seatHeight: '870 мм',
+      wheelbase: '1594 мм',
+      groundClearance: '220 мм',
+      brakeFront: '2x 320 мм диски',
+      brakeRear: '265 мм диск',
+      transmission: '6-ступенчатая',
+      cooling: 'Жидкостное',
+      ignition: 'Электронное',
     },
     price: '2 150 000 ₽',
   },
@@ -119,7 +151,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="Bike" className="text-primary" size={32} />
-              <h1 className="text-2xl font-bold">MOTO<span className="text-primary">PRO</span></h1>
+              <h1 className="text-2xl font-bold">MotoFox<span className="text-primary">Pro.Ru</span></h1>
             </div>
             <div className="hidden md:flex gap-6">
               {['Главная', 'Каталог', 'Характеристики', 'Двигатели', 'Сравнение', 'Контакты'].map((item) => (
@@ -385,6 +417,60 @@ export default function Index() {
                           </div>
                         </CardContent>
                       </Card>
+
+                      <Card>
+                        <CardHeader>
+                          <CardTitle className="flex items-center gap-2">
+                            <Icon name="Ruler" className="text-primary" />
+                            Размеры
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-3">
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">Высота сиденья</span>
+                            <span className="font-medium">{bike.specs.seatHeight}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">Колесная база</span>
+                            <span className="font-medium">{bike.specs.wheelbase}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">Дорожный просвет</span>
+                            <span className="font-medium">{bike.specs.groundClearance}</span>
+                          </div>
+                        </CardContent>
+                      </Card>
+
+                      <Card>
+                        <CardHeader>
+                          <CardTitle className="flex items-center gap-2">
+                            <Icon name="Disc" className="text-primary" />
+                            Тормоза и трансмиссия
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent className="space-y-3">
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">Передний тормоз</span>
+                            <span className="font-medium">{bike.specs.brakeFront}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">Задний тормоз</span>
+                            <span className="font-medium">{bike.specs.brakeRear}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">КПП</span>
+                            <span className="font-medium">{bike.specs.transmission}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">Охлаждение</span>
+                            <span className="font-medium">{bike.specs.cooling}</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span className="text-muted-foreground">Зажигание</span>
+                            <span className="font-medium">{bike.specs.ignition}</span>
+                          </div>
+                        </CardContent>
+                      </Card>
                     </div>
                   </div>
                 </TabsContent>
@@ -634,7 +720,7 @@ export default function Index() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Bike" className="text-primary" size={28} />
-                <h3 className="text-xl font-bold">MOTO<span className="text-primary">PRO</span></h3>
+                <h3 className="text-xl font-bold">MotoFox<span className="text-primary">Pro.Ru</span></h3>
               </div>
               <p className="text-sm text-muted-foreground">
                 Профессиональные мотоциклы с выдающимися характеристиками
