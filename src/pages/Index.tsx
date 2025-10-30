@@ -677,7 +677,7 @@ export default function Index() {
       )}
 
       {activeSection === 'характеристики' && (
-        <div className="pt-32 pb-20">
+        <div className="pt-40 pb-20">
           <div className="container mx-auto px-4">
             <h2 className="text-5xl font-bold mb-12 text-center">Технические характеристики</h2>
             <Tabs defaultValue={motorcycles[0].id.toString()} className="w-full">
@@ -691,8 +691,8 @@ export default function Index() {
               {motorcycles.map((bike) => (
                 <TabsContent key={bike.id} value={bike.id.toString()}>
                   <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <img src={bike.image} alt={bike.name} className="w-full rounded-lg" />
+                    <div className="flex items-start">
+                      <img src={bike.image} alt={bike.name} className="w-full rounded-lg sticky top-24" />
                     </div>
                     <div className="space-y-6">
                       <div>
