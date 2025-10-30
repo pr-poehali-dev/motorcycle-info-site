@@ -542,12 +542,12 @@ export default function Index() {
               className="absolute inset-0 bg-cover bg-center opacity-30"
               style={{ backgroundImage: `url(${motorcycles[0].image})` }}
             />
-            <div className="container mx-auto px-4 z-20 text-center">
+            <div className="container mx-auto px-4 z-20 text-center mt-20">
               <Badge className="mb-6 bg-primary/20 text-primary border-primary">Новая коллекция 2024</Badge>
-              <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
+              <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight drop-shadow-lg">
                 МОЩЬ И <span className="text-primary">СКОРОСТЬ</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto drop-shadow-md">
                 Профессиональные мотоциклы с выдающимися характеристиками. Полный анализ двигателей, колес и расхода
                 топлива.
               </p>
