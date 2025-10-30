@@ -566,14 +566,14 @@ export default function Index() {
                       <Icon name="MapPin" className="text-primary mt-1" size={24} />
                       <div>
                         <p className="font-medium">Адрес</p>
-                        <p className="text-muted-foreground">г. Москва, ул. Мотоциклистов, д. 15</p>
+                        <p className="text-muted-foreground">г. Новосибирск, ул. Мотоциклистов, д. 15</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
                       <Icon name="Phone" className="text-primary mt-1" size={24} />
                       <div>
                         <p className="font-medium">Телефон</p>
-                        <p className="text-muted-foreground">+7 (495) 123-45-67</p>
+                        <p className="text-muted-foreground">+7 (914) 112-54-40</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -666,9 +666,9 @@ export default function Index() {
             <div>
               <h4 className="font-bold mb-4">Контакты</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>+7 (495) 123-45-67</p>
+                <p>+7 (914) 112-54-40</p>
                 <p>info@motopro.ru</p>
-                <p>г. Москва</p>
+                <p>г. Новосибирск</p>
               </div>
             </div>
           </div>
