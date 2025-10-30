@@ -580,7 +580,7 @@ export default function Index() {
                       <Icon name="Mail" className="text-primary mt-1" size={24} />
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-muted-foreground">info@motopro.ru</p>
+                        <p className="text-muted-foreground">mrartyomreddarkfoxstorm@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -667,7 +667,7 @@ export default function Index() {
               <h4 className="font-bold mb-4">Контакты</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p>+7 (914) 112-54-40</p>
-                <p>info@motopro.ru</p>
+                <p>mrartyomreddarkfoxstorm@gmail.com</p>
                 <p>г. Новосибирск</p>
               </div>
             </div>
